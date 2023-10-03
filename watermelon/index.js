@@ -27,10 +27,10 @@
     });
 
     const times = [];
-    let fps = 100;
+    let fps = 144;
 
     let mousePos;
-    let isClicking = false;
+    let isClicking = true;
     let isMouseOver = false;
     let newSize = 1;
 
@@ -73,11 +73,6 @@
         mousePos = e.touches[0].clientX / parent.style.zoom
     })
 
-    addEventListener('mouseup', () => {
-        if (isGameOver) return
-
-        isClicking = false
-    })
     addEventListener('touchend', () => {
         if (isGameOver) return
 
