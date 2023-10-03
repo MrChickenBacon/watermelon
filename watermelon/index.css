@@ -116,8 +116,4 @@ a {
         order: 1;
     }
 
-    .item:nth-child(3) {
-        order: 3;
-        grid-column: 1;
-    }
 }
